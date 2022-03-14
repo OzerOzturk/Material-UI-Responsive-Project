@@ -1,20 +1,16 @@
-import "./App.css";
-import { Button } from "@material-ui/core";
-import { PersonOutline } from "@material-ui/icons";
+import { makeStyles } from "@material-ui/styles";
+import Navbar from "./components/Navbar";
+
+
+const useStyles = makeStyles((theme) => ({
+
+}));
 
 function App() {
-  return (
-    <div>
-      <Button
-        variant="contained"
-        color="primary"
-        size="large"
-        startIcon={<PersonOutline />}
-      >
-        Material UI
-      </Button>
-    </div>
-  );
+  const classes = useStyles();
+  return <div>
+    <Navbar/>
+  </div>;
 }
 
 export default App;
